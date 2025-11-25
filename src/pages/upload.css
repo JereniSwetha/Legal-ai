@@ -1,0 +1,60 @@
+/* Upload Page Styling */
+
+.upload-container {
+  width: 650px;
+  height: 250px;
+  margin: 30px auto;
+  background:white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.upload-container h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color:black;
+}
+
+.upload-container p {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.upload-card {
+  margin-top: 15px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 8px;
+  background:burlywood;
+  border: 1px solid #dce6f5;
+}
+
+.file-preview {
+  margin-top: 8px;
+  font-size: 15px;
+  padding: 10px;
+  background:lightgrey;
+  border-radius: 6px;
+}
+
+.upload-error {
+  color: #b50000;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.upload-btn {
+  margin-top: 15px;
+  padding: 10px 14px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
