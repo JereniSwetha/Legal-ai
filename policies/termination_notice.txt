@@ -1,0 +1,1 @@
+Every contract must specify termination conditions including notice period (e.g., 30 days), cause-based and convenience-based termination, and responsibilities of each party post-termination.

@@ -1,0 +1,1 @@
+Contracts must include a limitation of liability clause that caps financial liability (e.g., total fees paid in last 12 months). Exclusions: fraud, gross negligence, intentional misconduct.
