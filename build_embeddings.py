@@ -17,6 +17,10 @@ def load_policy_texts():
             with open(full_path, "r", encoding="utf-8") as f:
                 content = f.read().strip()
 
+                # Remove extra whitespace and newlines
+                content = " ".join(content.split())
+
+
             policy_name = os.path.splitext(file)[0]  # e.g. confidentiality
 
             texts.append(content)
