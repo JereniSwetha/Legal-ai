@@ -94,6 +94,27 @@ def get_policy_matches(
         "not_matched": not_matched,
     }
 
+# ---------- Main function for backend integration ----------
+def analyze_document(contract_text: str) -> Dict[str, Any]:
+    """
+    This is the single function Person A will call from the backend.
+    It analyzes the contract text and returns:
+    - matched policies
+    - not matched policies
+    - scores
+    """
+    # We use your similarity-based matcher
+    result = get_policy_matches(
+        query=contract_text,
+        top_k=5,
+        score_threshold=0.9
+    )
+
+    return {
+        "input_text": contract_text[:300] + "...",  # preview only
+        "matched_policies": result["matched"],
+        "not_matched_policies": result["not_matched"],
+    }
 
 # ---------- Quick manual tests ----------
 if __name__ == "__main__":
